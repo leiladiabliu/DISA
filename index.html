@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Passions+Conflict&family=Raleway:wght@200&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="DISA McMaster Stylesheet.css" rel="stylesheet">
+        <title>DISA</title>
+        <link rel="icon" type="image/x-icon" href="DISA Logo.png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1><img src="DISA Logo.png" style="width:20px;"> DISA McMaster</h1>
+            <span id="menu-icon">&#9776;</span>
+            <span class="close-btn" id="close-icon">&#10006;</span>
+            <div>
+                <ul>
+                    <li><a href="#home"><b>&#8962 Home</b></a></li>
+                    <li><a href="#about">ⓘ <b>About Us</b></a></li>
+                    <li><a href="DISA Blog.html">&#10000<b> Blog</b></a></li>
+                    <li><a href="#contact">&#9742 <b>Contact Us</b></a></li>
+                    <li><a href="#"><button><b>Sign Up</b></button></a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home">
+            <main>
+                <h2><span style="color:rgb(49, 201, 138);">Disability</span> Innovations, <br> Solutions and Awareness.</h2>
+                <button class="btn"><a>Sponsor</a></button>
+            </main>
+        </section>
+        <script>
+            // JavaScript to toggle the visibility of the menu
+            document.getElementById('menu-icon').addEventListener('click', function () {
+                var navList = document.querySelector('nav ul');
+                navList.classList.toggle('show');
+                document.querySelector('.close-btn').classList.toggle('show');
+            });
+        
+            document.getElementById('close-icon').addEventListener('click', function () {
+                var navList = document.querySelector('nav ul');
+                navList.classList.remove('show');
+                document.querySelector('.close-btn').classList.remove('show'); 
+            });
+        </script>
+        <section id="about">
+            <section id="aboutstuff">
+                <img src="DISA Logo.png" alt="Company Image">
+                <div>
+                    <h2>About Us</h2>
+                    <p>Our goal is to promote the proper support of individuals with disabilities through health science, engineering, and business concepts and innovations. We want to use knowledge and awareness to improve the lives of disabled individuals as a community, one step at a time.</p>
+                </div>
+            </section>
+        </section>
+        <footer id="contact">
+            <p>Contact: <a href="mailto:disa@mcmaster.ca">disa@macmaster.ca</a></p>
+            <p>Follow us on <a href="https://instagram.com/disa_mcmaster" target="_blank">Instagram</a></p>
+            <p>Follow us on <a href="https://linkedin.com/disa_mcmaster" target="_blank">Linkedin</a></p>
+            <p>&copy; 2023 DISA McMaster. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
